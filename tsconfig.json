@@ -1,21 +1,27 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "target": "es5",
-    "lib": ["esnext", "dom"],
-    "downlevelIteration": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "jsx": "react",
-    "allowJs": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "react-worker-components": ["./src"]
-    },
-    "outDir": "./dist"
-  }
+    "compilerOptions": {
+        "strict": true,
+        "target": "es5",
+        "lib": [
+            "esnext",
+            "dom",
+            "WebWorker"
+        ],
+        "downlevelIteration": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "allowJs": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "react-worker-components": [
+                "./src"
+            ]
+        },
+        "outDir": "./dist"
+    }
 }

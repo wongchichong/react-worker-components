@@ -34,7 +34,7 @@
     "tsc-test": "tsc --project . --noEmit",
     "apidoc": "documentation readme --section API --markdown-toc false --parse-extension ts --require-extension ts src/expose.ts src/wrap.ts",
     "examples:01_minimal": "DIR=01_minimal EXT=js webpack-dev-server",
-    "examples:02_typescript": "DIR=02_typescript webpack-dev-server",
+    "examples:02_typescript": "cross-env DIR=\"02_typescript\" webpack-dev-server",
     "examples:03_fetch": "DIR=03_fetch webpack-dev-server",
     "examples:04_multicomps": "DIR=04_multicomps webpack-dev-server"
   },
@@ -46,14 +46,15 @@
     "webworker"
   ],
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
+    "@types/node": "^18.11.9",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
+    "cross-env": "^7.0.3",
     "documentation": "^13.2.5",
     "eslint": "^8.6.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -77,5 +78,6 @@
   },
   "peerDependencies": {
     "react": ">=16.8.0"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }
