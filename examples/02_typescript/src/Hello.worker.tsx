@@ -1,4 +1,4 @@
-import React, { ReactNode, useContext, useMemo } from 'react'
+import React, { ReactNode } from 'react'
 
 import { expose } from 'react-worker-components'
 import { Label } from './Label'
@@ -19,7 +19,8 @@ const Hello: React.FC<Props> = ({ count, children }) => {
     return <div /* onClick={e => console.log("worker clicked")} */>
         <Label label="LABEL" />
         <div>Fibo: {fibNum}</div>
-        <h1>Worker TextBox isWorker: {isWorker + ''}</h1>
+        <div>Hello isWorker: {isWorker + ''}</div>
+        <h1>Worker TextBox</h1>
 
         <TextBox />
 

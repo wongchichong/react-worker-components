@@ -27,8 +27,8 @@ const Counter: React.FC = () => {
         }}>+1</button>
         {/* <button type="button" onClick={() => setCount((c) => c - 1)}>-1</button> */}
 
-        <br />
-        isWorker: {isWorker + ''}
+        <div>Counter isWorker: {isWorker + ''}</div>
+
         <Suspense fallback="Loading...">
             <div>Context: {n}</div>
 
